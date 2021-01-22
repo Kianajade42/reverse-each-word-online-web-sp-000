@@ -1,3 +1,3 @@
 def reverse_each_word(order)
-order.reverse.split.reverse.join(" ")
+order.split.collect {|word| word.reverse}.join(" ")
 end
